@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+main{
+    background-color: rgb(128, 106, 73);
+}
+
+header {
+    grid-column: span 2;
+    text-align: center;
+    height: 375px;
+    background-color: rgb(34, 24, 53);
+}
+
+header h1 {
+    color: white;
+    position: relative;
+    top: 30%;
+    font-size: 60px;
+}
+
+figure {
+    justify-self: right;
+}
+
+#profile-pic {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    max-width: 100%;
+    height: 50%;
+}
+
+article {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+article p {
+    text-align: left;
+    color: white;
+    width: 40%;
+    font-size: 25px;
+}
